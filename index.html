@@ -13,13 +13,14 @@
 
 <link rel="stylesheet" href="styles.css">
 
+
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
          <div class="container-fluid">
             <a class="navbar-brand" href="#"> 
-                <img src="67.png" alt="Logo" height="50px" width=""> 67 Rides
+                <img src="672.png" alt="Logo" height="50px" width=""> 67 Rides
                 
          </a>
 
@@ -51,17 +52,81 @@
      </div>
      <main class="text-center">
          <div class="container p-5 mt-5 bg-light text-dark center rounded-3">
-            <img src="67.png" alt="Logo" height="100px" width="">
+            <img src="672.png" alt="Logo" height="100px" width="">
             <h2> 67 Rides </h2> 
-            <p> Need a Ride?</p>
 
-        <button type="button" class="btn btn-success" onclick="checkBook()">Book a Ride
-        <div id="book"></div>
-        </div>
-     </div>
-       
-       
-       
+              <h2>Create Account</h2>
+       <div class="row">
+                <div class="col-md-6">
+                <label class="form-label" for="inputFirstname">First name</label>
+                <input type="firstname" class="form-control"
+
+                id="inputFirstname" placeholder="Enter first name">
+                </div>
+
+                <div class="col-md-6">
+                <label class="form-label" for="inputLastname">Last name</label>
+                <input type="lastname" class="form-control"
+
+                id="inputLastname" placeholder="Enter last name">
+                </div>
+            </div>
+            <!-- ROW 2 - BIRTHDATE, GENDER, LEVEL -->
+            <div class="row">
+                <div class="col-md-6">
+                <label class="form-label" for="inputBdate">Birthdate</label>
+                <input type="date" class="form-control"
+
+                id="inputBdate" placeholder="dd/mm/yyyy">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input type="user" class="form-control"
+
+                id="inputEmail" placeholder="Enter Email">
+            </div>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="vertical-layout bg-light p-3 mb-3 rounded">
+                <form>
+                <!-- NUMBER -->
+                    <div class="Fullname mb-3">
+                        <label class="form-label" for="inputnumber">Contact Number</label>
+                        <input type="number" class="form-control"
+
+                        id="inputFullname" placeholder="+67 0676-414-2161">
+
+                    </div>   
+                    <!-- EMAIL -->
+                   <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label" for="inputEmail">Username</label>
+                        <input type="username" class="form-control" 
+
+                        id="inputEmail" placeholder="Enter username">
+                    </div>  
+                    <div class="col-md-6">
+                        <label class="form-label" for="inputEmail">Password</label>
+                        <input type="username" class="form-control" 
+
+                        id="inputEmail" placeholder="Enter password">
+                    </div>  
+                    </div>
+                   
+                
+                        <input type="checkbox" id="confirm" name="confirm">
+			   			<label for="confirm">I confirm that all information is complete and correct</label>
+
+                        
+                </form>
+                <br>
+                <button type="submit" class="btn btn-primary">Create</button>   
+
+        </form>
+    </div>
+
 
 </body>
 </html>
